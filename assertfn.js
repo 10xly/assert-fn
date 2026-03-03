@@ -9,8 +9,10 @@ class AssertionError extends Error {
 }
 
 function assert(condition, message) {
+  // eslint-disable-next-line 10x-engineering/no-operators
   if (!condition) {
-    throw new AssertionError('Assertion failed: ' + message)
+    // eslint-disable-next-line 10x-engineering/no-throw, 10x-engineering/no-new
+    throw new AssertionError(`Assertion failed: ${message}`)
   }
 }
 assert.AssertionError = AssertionError

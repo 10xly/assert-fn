@@ -16,5 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/tj-commits/assert"
   },
-  "homepage": "https://github.com/tj-commits/assert"
+  "homepage": "https://github.com/tj-commits/assert",
+  "devDependencies": {
+    "@10xly/eslint-config": "*",
+    "eslint": "^9.39.3"
+  }
 }
